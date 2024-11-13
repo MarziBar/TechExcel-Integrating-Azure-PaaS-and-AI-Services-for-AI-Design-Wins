@@ -61,7 +61,7 @@ app.MapGet("/", async () =>
     .WithOpenApi();
 
 // Retrieve the set of hotels from the database.
- // Retrieve the set of hotels from the database.
+// Retrieve the set of hotels from the database.
  app.MapGet("/Hotels", async () => 
  {
      var hotels = await app.Services.GetRequiredService<IDatabaseService>().GetHotels();
